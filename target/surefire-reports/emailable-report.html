@@ -9,17 +9,95 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">sampleTest</th></tr>
-<tr><td><a href="#t0">thirdTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,465</td><td></td><td></td></tr>
+<tr><td><a href="#t0">basicTest</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">67,401</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">secondTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,311</td><td></td><td></td></tr>
+<tr><td><a href="#t2">thirdTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,591</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">4</th><th class="num">88,303</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">sampleTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">thirdTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.ThirdTest</td><td><a href="#m0">invalidLogin</a></td><td rowspan="1">1561580197172</td><td rowspan="1">7694</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">sampleTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">basicTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcases.FirstTest</td><td><a href="#m0">consolePcLink</a></td><td rowspan="1">1563311885516</td><td rowspan="1">9251</td></tr><tr class="failedeven"><td><a href="#m1">smartphoneTabLink</a></td><td rowspan="1">1563311894773</td><td rowspan="1">5475</td></tr><tr><th colspan="4">basicTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testcases.FirstTest</td><td><a href="#m2">gamaMagLink</a></td><td rowspan="1">1563311939035</td><td rowspan="1">8648</td></tr><tr class="passedeven"><td><a href="#m3">independentLink</a></td><td rowspan="1">1563311900249</td><td rowspan="1">8288</td></tr><tr class="passedeven"><td><a href="#m4">socialOnlineLink</a></td><td rowspan="1">1563311916052</td><td rowspan="1">22982</td></tr><tr class="passedeven"><td><a href="#m5">vrArLink</a></td><td rowspan="1">1563311908538</td><td rowspan="1">7513</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">secondTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.SecondTest</td><td><a href="#m6">topicLinkFirst</a></td><td rowspan="1">1563311951013</td><td rowspan="1">6024</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">thirdTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.ThirdTest</td><td><a href="#m7">invalidLogin</a></td><td rowspan="1">1563311960428</td><td rowspan="1">8239</td></tr></tbody>
 </table>
-<h2>thirdTest</h2><h3 id="m0">testcases.ThirdTest#invalidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;Login&quot; id=&quot;submit&quot; name=&quot;submit&quot;&gt; is not clickable at point (110, 11). Other element would receive the click: &lt;div id=&quot;interBgWrap&quot; style=&quot;position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=75.0.3770.100)
+<h2>basicTest</h2><h3 id="m0">testcases.FirstTest#consolePcLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/topic/console-pc&quot;&gt;...&lt;/a&gt; is not clickable at point (137, 5). Other element would receive the click: &lt;div id=&quot;interBgWrap&quot; style=&quot;position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;KNY-LENOVO1662&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;KNY-LENOVO1498&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\dturner\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e96679e2ca3bc855e204e48ea7b689e2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94d006a9e88e9e48be5724a669cae0fe
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.xpxn.automation.pages.BasePage.click(BasePage.java:22)
+	at com.xpxn.automation.pages.BasePage.click(BasePage.java:20)
+	at testcases.FirstTest.consolePcLink(FirstTest.java:16)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.FirstTest#smartphoneTabLink</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/topic/smartphone-tablet&quot;&gt;...&lt;/a&gt; is not clickable at point (281, 5). Other element would receive the click: &lt;div id=&quot;interBgWrap&quot; style=&quot;position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=75.0.3770.142)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KNY-LENOVO1498&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94d006a9e88e9e48be5724a669cae0fe
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.xpxn.automation.pages.BasePage.click(BasePage.java:22)
+	at com.xpxn.automation.pages.BasePage.click(BasePage.java:20)
+	at testcases.FirstTest.smartphoneTabLink(FirstTest.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.FirstTest#gamaMagLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.FirstTest#independentLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.FirstTest#socialOnlineLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.FirstTest#vrArLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>secondTest</h2><h3 id="m6">testcases.SecondTest#topicLinkFirst</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/view/news/346231/The_aggressive_resource_management_of_Doom_Eternal.php&quot;&gt;...&lt;/a&gt; is not clickable at point (550, 9). Other element would receive the click: &lt;div id=&quot;interBgWrap&quot; style=&quot;position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=75.0.3770.142)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KNY-LENOVO1498&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2726165ee4eb95a787ba708b2e2c55ea
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.xpxn.automation.pages.BasePage.click(BasePage.java:22)
+	at com.xpxn.automation.pages.BasePage.click(BasePage.java:20)
+	at testcases.SecondTest.topicLinkFirst(SecondTest.java:15)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>thirdTest</h2><h3 id="m7">testcases.ThirdTest#invalidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;Login&quot; id=&quot;submit&quot; name=&quot;submit&quot;&gt; is not clickable at point (110, 11). Other element would receive the click: &lt;div id=&quot;interBgWrap&quot; style=&quot;position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=75.0.3770.142)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KNY-LENOVO1498&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f300f02fa6b05af8c3cd706331994baf
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)

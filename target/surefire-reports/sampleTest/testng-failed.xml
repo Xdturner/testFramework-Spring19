@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [sampleTest]" parallel="tests">
+  <test thread-count="1" verbose="0" name="basicTest(failed)" parallel="tests">
+    <parameter name="asdf" value="fdsa"/>
+    <classes>
+      <class name="testcases.FirstTest">
+        <methods>
+          <include name="_DestroyDriver"/>
+          <include name="_InitDriver"/>
+          <include name="consolePcLink"/>
+          <include name="smartphoneTabLink"/>
+        </methods>
+      </class> <!-- testcases.FirstTest -->
+    </classes>
+  </test> <!-- basicTest(failed) -->
+  <test thread-count="1" verbose="0" name="secondTest(failed)" parallel="tests">
+    <classes>
+      <class name="testcases.SecondTest">
+        <methods>
+          <include name="_DestroyDriver"/>
+          <include name="_InitDriver"/>
+          <include name="topicLinkFirst"/>
+        </methods>
+      </class> <!-- testcases.SecondTest -->
+    </classes>
+  </test> <!-- secondTest(failed) -->
   <test thread-count="1" verbose="0" name="thirdTest(failed)" parallel="tests">
     <classes>
       <class name="testcases.ThirdTest">

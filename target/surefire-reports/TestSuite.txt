@@ -1,15 +1,48 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.628 s <<< FAILURE! - in TestSuite
-invalidLogin(testcases.ThirdTest)  Time elapsed: 7.697 s  <<< FAILURE!
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 89.147 s <<< FAILURE! - in TestSuite
+consolePcLink(testcases.FirstTest)  Time elapsed: 9.253 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/topic/console-pc">...</a> is not clickable at point (137, 5). Other element would receive the click: <div id="interBgWrap" style="position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KNY-LENOVO1498', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94d006a9e88e9e48be5724a669cae0fe
+	at testcases.FirstTest.consolePcLink(FirstTest.java:16)
+
+smartphoneTabLink(testcases.FirstTest)  Time elapsed: 5.476 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/topic/smartphone-tablet">...</a> is not clickable at point (281, 5). Other element would receive the click: <div id="interBgWrap" style="position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KNY-LENOVO1498', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 94d006a9e88e9e48be5724a669cae0fe
+	at testcases.FirstTest.smartphoneTabLink(FirstTest.java:26)
+
+topicLinkFirst(testcases.SecondTest)  Time elapsed: 6.024 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/view/news/346231/The_aggressive_resource_management_of_Doom_Eternal.php">...</a> is not clickable at point (550, 9). Other element would receive the click: <div id="interBgWrap" style="position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;"></div>
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KNY-LENOVO1498', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2726165ee4eb95a787ba708b2e2c55ea
+	at testcases.SecondTest.topicLinkFirst(SecondTest.java:15)
+
+invalidLogin(testcases.ThirdTest)  Time elapsed: 8.239 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
 element click intercepted: Element <input type="submit" class="button" value="Login" id="submit" name="submit"> is not clickable at point (110, 11). Other element would receive the click: <div id="interBgWrap" style="position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;"></div>
-  (Session info: chrome=75.0.3770.100)
+  (Session info: chrome=75.0.3770.142)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KNY-LENOVO1662', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'KNY-LENOVO1498', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\dturner\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e96679e2ca3bc855e204e48ea7b689e2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\jmorin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f300f02fa6b05af8c3cd706331994baf
 	at testcases.ThirdTest.invalidLogin(ThirdTest.java:18)
 

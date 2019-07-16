@@ -1,13 +1,14 @@
 package testcases;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.GamasutraBasePage;
 import steps.BaseTest;
 
 public class FirstTest extends BaseTest {
 
-    @Test(priority = 1)
+    @Test (priority=1, groups={"group test"})
     private void consolePcLink(){
         GamasutraBasePage pageTest = GamasutraBasePage.Go(driver);
         wait.until(ExpectedConditions.urlContains("gamasutra.com"));

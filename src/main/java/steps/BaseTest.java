@@ -19,8 +19,8 @@ public abstract class BaseTest {
 
     @BeforeClass
     protected void _InitDriver() throws MalformedURLException {
-        MutableCapabilities caps = DriverFactory.setup(Configuration.getDriverEnvironment());
-        driver = DriverFactory.build(Configuration.getDriverEnvironment(), caps);
+        MutableCapabilities caps = DriverFactory.setup(Configuration.appEnv().expect());
+        driver = DriverFactory.build(Configuration.appEnv().expect(), caps);
         wait = new WebDriverWait(driver, 15);
         softAssert = new SoftAssert();
     }

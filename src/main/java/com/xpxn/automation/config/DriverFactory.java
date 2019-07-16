@@ -52,10 +52,10 @@ public class DriverFactory {
     }
 
     public static MutableCapabilities setupLocal(){
-        String browser = Configuration.getBrowserName();
+        Property browser = Configuration.envBrowserName();
         MutableCapabilities caps = null;
 
-        switch (browser.toLowerCase()) {
+        switch (browser.expect("chrome", "edge", "firefox")) {
             case "chrome":
                 caps = new ChromeOptions();
                 break;
@@ -76,10 +76,10 @@ public class DriverFactory {
     }
 
     public static WebDriver buildLocal(MutableCapabilities caps) {
-        String browser = Configuration.getBrowserName();
+        Property browser = Configuration.envBrowserName();
         WebDriver dr;
 
-        switch (browser.toLowerCase()) {
+        switch (browser.expect("chrome", "edge", "firefox")) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 dr = new ChromeDriver((ChromeOptions)caps);
@@ -100,7 +100,7 @@ public class DriverFactory {
     }
 
     public static WebDriver buildRemote(MutableCapabilities caps) throws MalformedURLException {
-        return new RemoteWebDriver(new URL(Configuration.getRemoteURL()), caps);
+        return new RemoteWebDriver(new URL(Configuration.envRemoteUrl().expect()), caps);
     }
     public static void DestroyDriver() {
         driver.get().quit();
