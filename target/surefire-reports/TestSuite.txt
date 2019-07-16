@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.628 s <<< FAILURE! - in TestSuite
+invalidLogin(testcases.ThirdTest)  Time elapsed: 7.697 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="submit" class="button" value="Login" id="submit" name="submit"> is not clickable at point (110, 11). Other element would receive the click: <div id="interBgWrap" style="position: fixed; width: 1036px; height: 3000px; left: 0px; top: 0px; visibility: visible; opacity: 1; background-color: rgb(51, 51, 51); z-index: 9999998;"></div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KNY-LENOVO1662', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\dturner\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e96679e2ca3bc855e204e48ea7b689e2
+	at testcases.ThirdTest.invalidLogin(ThirdTest.java:18)
+

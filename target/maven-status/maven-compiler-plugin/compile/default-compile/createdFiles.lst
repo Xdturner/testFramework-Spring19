@@ -1,0 +1,4 @@
+steps\BaseTest.class
+com\xpxn\automation\config\DriverFactory.class
+com\xpxn\automation\config\Configuration.class
+com\xpxn\automation\pages\BasePage.class

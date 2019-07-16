@@ -1,0 +1,6 @@
+pages\ConsolePcPage.class
+testcases\FirstTest.class
+testcases\ThirdTest.class
+pages\HomePage.class
+pages\GamasutraBasePage.class
+testcases\SecondTest.class
